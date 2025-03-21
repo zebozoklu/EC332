@@ -1,0 +1,9 @@
+# Ignore datasets and cache files
+*.xlsx
+*.csv
+*.RData
+
+# Ignore R session and workspace files
+.Rhistory
+.RData
+.Rproj.user
