@@ -1,0 +1,33 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+
+\title{EC332 - Homework 2}
+\author{Zeynep Bozoklu}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{}
+The table below presents the order of integration for all variables, determined by ADF and PP tests.
+
+\input{../results/order_of_integration.tex}
+
+The results indicate that \textit{growth} is stationary at level (\(I(0)\)), while \textit{gov}, \textit{tax}, \textit{inflation}, and \textit{it} are stationary after first differencing (\(I(1)\)). However, \textit{debt} and \textit{m3} show conflicting results between the tests, with ADF suggesting second-order integration (\(I(2)\)) and PP suggesting first-order integration (\(I(1)\)). 
+
+To resolve this discrepancy, additional KPSS tests were conducted for \textit{debt} and \textit{m3}. Since the KPSS test assumes stationarity under the null hypothesis, each variable was tested at levels, first differences, and second differences. The results reject stationarity at levels but fail to reject it at the first difference for both variables, indicating that they are stationary after first differencing.
+
+\input{../results/kpss_results.tex}
+
+Given the robustness of the PP test and the supporting evidence from the KPSS test, \textit{debt} and \textit{m3} are treated as integrated of order one (\(I(1)\)). Consequently, all non-stationary variables in the dataset are considered \(I(1)\), except for \textit{growth}, which is stationary in levels (\(I(0)\)).
+
+\end{document}
