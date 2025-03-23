@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.23)  22 MAR 2025 12:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.23)  23 MAR 2025 16:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -347,7 +347,14 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count294
 \l__pdf_internal_box=\box55
 )
-No file Homework2_Bozoklu.aux.
+(./Homework2_Bozoklu.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+)
 \openout1 = `Homework2_Bozoklu.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -368,6 +375,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -429,6 +437,8 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 16.
+
+(./Homework2_Bozoklu.out) (./Homework2_Bozoklu.out)
 \@outlinefile=\write3
 \openout3 = `Homework2_Bozoklu.out'.
 
@@ -447,36 +457,40 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (../results/order_of_integration.tex) (../results/kpss_results.tex) [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./Homework2_Bozoklu.aux)
+(../results/var_lag_selection.tex)
+<../results/granger_causality_heatmap.png, id=28, 505.89pt x 433.62pt>
+File: ../results/granger_causality_heatmap.png Graphic file (type png)
+<use ../results/granger_causality_heatmap.png>
+Package pdftex.def Info: ../results/granger_causality_heatmap.png  used on inpu
+t line 53.
+(pdftex.def)             Requested size: 199.30698pt x 170.83803pt.
+ [2 <../results/granger_causality_heatmap.png>] [3{/usr/local/texlive/2023/texm
+f-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./Homework2_Bozoklu.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `Homework2_Bozoklu.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Homework2_Bozoklu.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  9534070C232AA0A3F935CB7C3E3F8D46;35.
+Package rerunfilecheck Info: File `Homework2_Bozoklu.out' has not changed.
+(rerunfilecheck)             Checksum: F575326D5F31DF0EA941E70152E6A9ED;105.
  ) 
 Here is how much of TeX's memory you used:
- 11426 strings out of 476025
- 184201 string characters out of 5790017
+ 11463 strings out of 476025
+ 185004 string characters out of 5790017
  1867388 words of memory out of 5000000
- 31742 multiletter control sequences out of 15000+600000
- 520783 words of font info for 65 fonts, out of 8000000 for 9000
+ 31760 multiletter control sequences out of 15000+600000
+ 521427 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,9n,76p,460b,433s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,9n,76p,460b,488s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
 usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></us
-r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Homework2_Bozoklu.pdf (1 page, 60899 bytes).
+r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/
+local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on Homework2_Bozoklu.pdf (3 pages, 273541 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 79 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 500000)
+ 30 words of extra memory for PDF output out of 10000 (max. 10000000)
 

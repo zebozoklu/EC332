@@ -30,4 +30,70 @@ To resolve this discrepancy, additional KPSS tests were conducted for \textit{de
 
 Given the robustness of the PP test and the supporting evidence from the KPSS test, \textit{debt} and \textit{m3} are treated as integrated of order one (\(I(1)\)). Consequently, all non-stationary variables in the dataset are considered \(I(1)\), except for \textit{growth}, which is stationary in levels (\(I(0)\)).
 
+
+\section{}
+
+
+Lag length selection was performed using AIC, HQ, SC, and FPE criteria. These are commonly used information criteria that guide model specification by balancing model fit and complexity. For each criterion, the lag length with the \textit{lowest} value is considered optimal. 
+
+The Akaike Information Criterion (AIC) and Final Prediction Error (FPE) prioritize model fit, which may lead to selecting more lags. In contrast, the Schwarz Criterion (SC or BIC) and Hannan-Quinn Criterion (HQ) impose heavier penalties for additional lags and often favor more parsimonious models. 
+
+In this case, all criteria consistently suggested using a single lag across the range of lag lengths considered. Therefore, a VAR(1) specification is chosen for estimation in the following analysis.
+
+\input{../results/var_lag_selection.tex}
+
+\section{}
+
+Granger causality tests are used to identify predictive relationships among variables: specifically, whether past values of one variable help forecast another. A p-value below 0.05 indicates that the null hypothesis of "no Granger causality" can be rejected, meaning that one variable Granger-causes another.
+
+The heatmap below visualizes the p-values from pairwise Granger causality tests among all stationary variables. Significant relationships (p $<$ 0.05) are marked with an asterisk.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.44\textwidth]{../results/granger_causality_heatmap.png}
+  \caption{Granger Causality Test Results (p-values)}
+\end{figure}
+
+\textbf{Summary of Significant Granger-Causal Relationships}
+
+\begin{itemize}
+  \item \textbf{growth} $\rightarrow$ d\_inflation, d\_tax
+  \item \textbf{d\_tax} $\rightarrow$ d\_m3
+  \item \textbf{d\_m3} $\rightarrow$ growth
+  \item \textbf{d\_it} $\rightarrow$ growth
+  \item \textbf{d\_inflation} $\rightarrow$ d\_gov, d\_it, growth
+  \item \textbf{d\_gov} $\rightarrow$ d\_debt, d\_inflation, d\_tax
+  \item \textbf{d\_debt} $\rightarrow$ None (no significant Granger causality)
+\end{itemize}
+
+\textbf{Interpretation and Economic Intuition}
+
+\begin{itemize}
+  \item \textbf{Growth Granger-causing inflation and tax revenue} reflects demand-side dynamics. Strong growth often leads to increased demand, pushing up prices (demand-pull inflation), and boosts tax revenues through higher income and consumption.
+  
+  \item \textbf{Tax revenue Granger-causing money supply} may suggest policy coordination. Rising taxes might reduce deficits, influencing liquidity needs or central bank responses.
+
+  \item \textbf{Money supply Granger-causing growth} aligns with classical monetary theory. Greater liquidity supports investment and consumption, which drives output.
+
+  \item \textbf{Interest rate Granger-causing growth} captures the standard monetary transmission mechanism. Changes in interest rates influence borrowing and investment behavior, affecting aggregate demand.
+
+  \item \textbf{Inflation Granger-causing spending, interest rates, and growth} suggests inflation acts as a policy signal. Governments and central banks may react to inflation by adjusting fiscal and monetary policy. Additionally, inflation could influence output via cost-push effects.
+
+  \item \textbf{Government spending Granger-causing debt, inflation, and tax revenue} reflects standard macroeconomic channels. Fiscal expansions increase debt when deficit-financed, stimulate demand and inflation, and boost tax revenue via multiplier effects.
+
+  \item \textbf{Debt not Granger-causing any other variable} suggests that debt acts as a lagging indicator—reacting to changes in growth or spending rather than driving them in the short run.
+\end{itemize}
+
+These results collectively validate classical macroeconomic transmission mechanisms and show how fiscal and monetary variables interact with real economic outcomes.
+
+
+
+
+
+
+
+
+
+
+
 \end{document}
