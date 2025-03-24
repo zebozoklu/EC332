@@ -86,6 +86,48 @@ The heatmap below visualizes the p-values from pairwise Granger causality tests 
 
 These results collectively validate classical macroeconomic transmission mechanisms and show how fiscal and monetary variables interact with real economic outcomes.
 
+\section{}
+
+Impulse response functions (IRFs) trace the effect of a one-time shock to one variable on the current and future values of all variables in a VAR system. Using the VAR(1) model estimated earlier, the dynamic responses of all variables to one-standard-deviation shocks in each variable were analyzed.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{../results/irf_faceted_plot.png}
+  \caption{Impulse Response Functions (10 Periods Ahead)}
+\end{figure}
+
+Each row in the IRF plot represents a one-time shock to a given variable, and each column shows how the remaining variables respond over ten periods.
+
+\begin{itemize}
+  \item \textbf{Government Spending Shocks (d\_gov):}
+  Boost public debt and mildly raise output and inflation. 
+  This aligns with a standard fiscal multiplier, but comes at the cost of higher debt.
+
+  \item \textbf{Tax Shocks (d\_tax):}
+  Lower debt (via increased revenue) without reducing output.
+  Inflation and interest rates remain near baseline, indicating limited macro disruption.
+
+  \item \textbf{Debt Shocks (d\_debt):}
+  Have mild real-side effects. A debt increase does not strongly affect inflation, interest rates, or growth,
+  suggesting debt is more reactive than causal in this system.
+
+  \item \textbf{Interest Rate Shocks (d\_it):}
+  Cause no contraction in output and do not strongly reduce inflation,
+  implying a relatively weak monetary transmission channel. Public debt declines slightly as borrowing becomes costlier.
+
+  \item \textbf{Money Supply Shocks (d\_m3):}
+  Show initial contractionary impact on inflation or output, suggesting either sterilization or weak short-run monetary transmission.
+  Interest rates remain largely unchanged, and fiscal variables are not strongly affected.
+
+  \item \textbf{Inflation Shocks (d\_inflation):}
+  Do not trigger a forceful policy response. Government spending dips, but interest rates barely move,
+  and output may even see a brief positive bump.
+
+  \item \textbf{Growth Shocks (growth):}
+A positive output shock reduces both public debt and inflation, suggesting improved fiscal balances and muted price pressures when the economy expands. Other variables, such as government spending, interest rates, and tax revenue, remain near baseline, indicating limited spillovers from growth shocks.
+
+\end{itemize}
+
 
 
 
