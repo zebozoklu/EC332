@@ -128,6 +128,32 @@ A positive output shock reduces both public debt and inflation, suggesting impro
 
 \end{itemize}
 
+\section{}
+
+Forecast Error Variance Decompositions (FEVD) quantify how much of each variable's forecast error variance is explained by its own shocks versus shocks to other variables. Figure~\ref{fig:fevd_area} presents a stacked area plot showing how these contributions evolve from horizon 1 to 10 for key variables.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{../results/fevd_stacked_area.png}
+  \caption{Forecast Error Variance Decomposition (Stacked Area) for Selected Variables}
+  \label{fig:fevd_area}
+\end{figure}
+
+\begin{itemize}
+    \item \textit{\(d\_debt\):} The variance in government debt is primarily driven by shocks to government spending (\(d\_gov\)). This indicates that fiscal policy changes—through their financing and borrowing implications—are the main determinants of debt dynamics.
+    
+    \item \textit{\(d\_gov\):} Government spending variability is largely explained by debt shocks (\(d\_debt\)). This reciprocal relationship suggests that increases in debt significantly influence fiscal expansion decisions.
+    
+    \item \textit{\(d\_it\):} The forecast error variance of interest rates is mainly attributable to shocks in debt and inflation (\(d\_debt\) and \(d\_inflation\)), underscoring that monetary policy responses are closely linked to fiscal imbalances and price pressures.
+    
+    \item \textit{\(d\_m3\):} Money supply fluctuations are largely driven by debt and inflation shocks, implying that changes in the monetary base tend to reflect underlying fiscal imbalances and inflationary pressures.
+    
+    \item \textit{\(d\_tax\):} Tax revenue variability is significantly influenced by shocks to debt, government spending, and growth. This pattern suggests that fiscal policy and overall economic performance play a key role in determining tax collection.
+    
+    \item \textit{growth:} Output variability is mainly explained by shocks to debt and inflation, highlighting the importance of fiscal imbalances and price dynamics in shaping real economic activity.
+\end{itemize}
+
+
 
 
 
