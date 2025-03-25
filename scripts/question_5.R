@@ -56,7 +56,7 @@ p_area <- fevd_df %>%
   ggplot(aes(x = Horizon, y = Contribution, fill = Shock)) +
   geom_area(alpha = 0.8, color = "black") +
   facet_wrap(~ Response, scales = "free_y") +
-  labs(title = "FEVD Over Horizons for Selected Variables",
+  labs(title = "FEVD Over Horizons",
        x = "Forecast Horizon", y = "Variance Share") +
   scale_y_continuous(labels = percent_format(accuracy = 1)) +
   theme_minimal() +

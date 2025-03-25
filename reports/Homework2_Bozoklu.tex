@@ -17,6 +17,14 @@
 
 \maketitle
 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{../results/all_variables_normalized_plot.png}
+  \caption{Normalized Initial Plot}
+\end{figure}
+
+
 \section{}
 The table below presents the order of integration for all variables, determined by ADF and PP tests.
 
@@ -30,6 +38,27 @@ To resolve this discrepancy, additional KPSS tests were conducted for \textit{de
 
 Given the robustness of the PP test and the supporting evidence from the KPSS test, \textit{debt} and \textit{m3} are treated as integrated of order one (\(I(1)\)). Consequently, all non-stationary variables in the dataset are considered \(I(1)\), except for \textit{growth}, which is stationary in levels (\(I(0)\)).
 
+
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth]{../results/var1_actual_all.png}
+    \caption{Actual (Differenced, Normalized)}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth]{../results/var1_fitted_all.png}
+    \caption{Fitted (VAR(1))}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth]{../results/var1_residuals_all.png}
+    \caption{Residuals}
+  \end{subfigure}
+  \caption{Actual, Fitted, and Residual Series from VAR(1) Model (Normalized)}
+  \label{fig:var1_allseries}
+\end{figure}
 
 \section{}
 
@@ -135,7 +164,7 @@ Forecast Error Variance Decompositions (FEVD) quantify how much of each variable
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{../results/fevd_stacked_area.png}
-  \caption{Forecast Error Variance Decomposition (Stacked Area) for Selected Variables}
+  \caption{Forecast Error Variance Decomposition (Stacked Area)}
   \label{fig:fevd_area}
 \end{figure}
 
