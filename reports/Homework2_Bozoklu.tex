@@ -153,6 +153,26 @@ Forecast Error Variance Decompositions (FEVD) quantify how much of each variable
     \item \textit{growth:} Output variability is mainly explained by shocks to debt and inflation, highlighting the importance of fiscal imbalances and price dynamics in shaping real economic activity.
 \end{itemize}
 
+\section{}
+
+Forecasts for tax revenue (\textit{d\_tax}) for the years 2020 and 2021 are generated using a univariate AR(1) model estimated in levels. The forecast indicates a slight increase in tax revenue over the two-year horizon, with substantial uncertainty around the estimates.
+
+
+\input{../results/d_tax_forecast.tex}
+
+
+
+The relatively flat forecast path implies tax revenues are expected to stabilize near their recent levels. However, the wide confidence intervals suggest the forecast is subject to considerable uncertainty. This reflects the limitations of using a simple time series model for forecasting during periods of potential structural change or heightened volatility.
+
+The figure below displays both the historical series and the forecasts, with the 95\% confidence intervals shaded in blue.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{../results/d_tax_forecast_plot.png}
+  \caption{Forecast of Tax Revenue for 2020 and 2021 (Levels)}
+\end{figure}
+
+
 
 
 
