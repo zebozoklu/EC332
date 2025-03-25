@@ -17,6 +17,9 @@
 
 \maketitle
 
+The full code and results for this homework are available at:
+\href{https://github.com/zebozoklu/EC332/tree/main/hw2}{\texttt{GitHub}}
+
 
 \begin{figure}[H]
   \centering
@@ -38,6 +41,16 @@ To resolve this discrepancy, additional KPSS tests were conducted for \textit{de
 
 Given the robustness of the PP test and the supporting evidence from the KPSS test, \textit{debt} and \textit{m3} are treated as integrated of order one (\(I(1)\)). Consequently, all non-stationary variables in the dataset are considered \(I(1)\), except for \textit{growth}, which is stationary in levels (\(I(0)\)).
 
+\section{}
+
+
+Lag length selection was performed using AIC, HQ, SC, and FPE criteria. These are commonly used information criteria that guide model specification by balancing model fit and complexity. For each criterion, the lag length with the \textit{lowest} value is considered optimal. 
+
+The Akaike Information Criterion (AIC) and Final Prediction Error (FPE) prioritize model fit, which may lead to selecting more lags. In contrast, the Schwarz Criterion (SC or BIC) and Hannan-Quinn Criterion (HQ) impose heavier penalties for additional lags and often favor more parsimonious models. 
+
+In this case, all criteria consistently suggested using a single lag across the range of lag lengths considered. Therefore, a VAR(1) specification is chosen for estimation in the following analysis.
+
+\input{../results/var_lag_selection.tex}
 
 
 \begin{figure}[H]
@@ -59,17 +72,6 @@ Given the robustness of the PP test and the supporting evidence from the KPSS te
   \caption{Actual, Fitted, and Residual Series from VAR(1) Model (Normalized)}
   \label{fig:var1_allseries}
 \end{figure}
-
-\section{}
-
-
-Lag length selection was performed using AIC, HQ, SC, and FPE criteria. These are commonly used information criteria that guide model specification by balancing model fit and complexity. For each criterion, the lag length with the \textit{lowest} value is considered optimal. 
-
-The Akaike Information Criterion (AIC) and Final Prediction Error (FPE) prioritize model fit, which may lead to selecting more lags. In contrast, the Schwarz Criterion (SC or BIC) and Hannan-Quinn Criterion (HQ) impose heavier penalties for additional lags and often favor more parsimonious models. 
-
-In this case, all criteria consistently suggested using a single lag across the range of lag lengths considered. Therefore, a VAR(1) specification is chosen for estimation in the following analysis.
-
-\input{../results/var_lag_selection.tex}
 
 \section{}
 
@@ -121,7 +123,7 @@ Impulse response functions (IRFs) trace the effect of a one-time shock to one va
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.9\textwidth]{../results/irf_faceted_plot.png}
+  \includegraphics[width=0.7\textwidth]{../results/irf_faceted_plot.png}
   \caption{Impulse Response Functions (10 Periods Ahead)}
 \end{figure}
 
