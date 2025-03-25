@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.23)  25 MAR 2025 20:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.23)  25 MAR 2025 20:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -454,68 +454,67 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<../results/all_variables_normalized_plot.png, id=28, 578.16pt x 361.35pt>
+<../results/all_variables_normalized_plot.png, id=29, 578.16pt x 361.35pt>
 File: ../results/all_variables_normalized_plot.png Graphic file (type png)
 <use ../results/all_variables_normalized_plot.png>
 Package pdftex.def Info: ../results/all_variables_normalized_plot.png  used on 
-input line 23.
+input line 26.
 (pdftex.def)             Requested size: 407.66833pt x 254.79037pt.
 
-(../results/order_of_integration.tex) (../results/kpss_results.tex)
-<../results/var1_actual_all.png, id=30, 722.7pt x 433.62pt>
+(../results/order_of_integration.tex) (../results/kpss_results.tex) [1
+
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../resu
+lts/all_variables_normalized_plot.png>] (../results/var_lag_selection.tex)
+<../results/var1_actual_all.png, id=44, 722.7pt x 433.62pt>
 File: ../results/var1_actual_all.png Graphic file (type png)
 <use ../results/var1_actual_all.png>
-Package pdftex.def Info: ../results/var1_actual_all.png  used on input line 46.
+Package pdftex.def Info: ../results/var1_actual_all.png  used on input line 59.
 
 (pdftex.def)             Requested size: 144.95303pt x 86.96727pt.
-<../results/var1_fitted_all.png, id=31, 722.7pt x 433.62pt>
+<../results/var1_fitted_all.png, id=45, 722.7pt x 433.62pt>
 File: ../results/var1_fitted_all.png Graphic file (type png)
 <use ../results/var1_fitted_all.png>
-Package pdftex.def Info: ../results/var1_fitted_all.png  used on input line 51.
+Package pdftex.def Info: ../results/var1_fitted_all.png  used on input line 64.
 
 (pdftex.def)             Requested size: 144.95303pt x 86.96727pt.
-<../results/var1_residuals_all.png, id=32, 722.7pt x 433.62pt>
+<../results/var1_residuals_all.png, id=46, 722.7pt x 433.62pt>
 File: ../results/var1_residuals_all.png Graphic file (type png)
 <use ../results/var1_residuals_all.png>
 Package pdftex.def Info: ../results/var1_residuals_all.png  used on input line 
-56.
+69.
 (pdftex.def)             Requested size: 144.95303pt x 86.96727pt.
- [1
-
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../resu
-lts/all_variables_normalized_plot.png>] (../results/var_lag_selection.tex) [2 <
-../results/var1_actual_all.png> <../results/var1_fitted_all.png> <../results/va
-r1_residuals_all.png>]
-<../results/granger_causality_heatmap.png, id=56, 505.89pt x 433.62pt>
+ [2]
+<../results/granger_causality_heatmap.png, id=54, 505.89pt x 433.62pt>
 File: ../results/granger_causality_heatmap.png Graphic file (type png)
 <use ../results/granger_causality_heatmap.png>
 Package pdftex.def Info: ../results/granger_causality_heatmap.png  used on inpu
-t line 82.
+t line 84.
 (pdftex.def)             Requested size: 199.30698pt x 170.83803pt.
  [3{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.en
-c} <../results/granger_causality_heatmap.png>]
-<../results/irf_faceted_plot.png, id=66, 867.24pt x 722.7pt>
+c} <../results/var1_actual_all.png> <../results/var1_fitted_all.png> <../result
+s/var1_residuals_all.png> <../results/granger_causality_heatmap.png>]
+<../results/irf_faceted_plot.png, id=68, 867.24pt x 722.7pt>
 File: ../results/irf_faceted_plot.png Graphic file (type png)
 <use ../results/irf_faceted_plot.png>
 Package pdftex.def Info: ../results/irf_faceted_plot.png  used on input line 12
-4.
-(pdftex.def)             Requested size: 407.66833pt x 339.72418pt.
+6.
+(pdftex.def)             Requested size: 317.07614pt x 264.22992pt.
  [4] [5 <../results/irf_faceted_plot.png>]
-<../results/fevd_stacked_area.png, id=78, 722.7pt x 578.16pt>
+<../results/fevd_stacked_area.png, id=80, 722.7pt x 578.16pt>
 File: ../results/fevd_stacked_area.png Graphic file (type png)
 <use ../results/fevd_stacked_area.png>
 Package pdftex.def Info: ../results/fevd_stacked_area.png  used on input line 1
-66.
+68.
 (pdftex.def)             Requested size: 362.37569pt x 289.89973pt.
  [6 <../results/fevd_stacked_area.png>]
 (../results/d_tax_forecast.tex)
-<../results/d_tax_forecast_plot.png, id=85, 578.16pt x 361.35pt>
+<../results/d_tax_forecast_plot.png, id=87, 578.16pt x 361.35pt>
 File: ../results/d_tax_forecast_plot.png Graphic file (type png)
 <use ../results/d_tax_forecast_plot.png>
 Package pdftex.def Info: ../results/d_tax_forecast_plot.png  used on input line
- 200.
+ 202.
 (pdftex.def)             Requested size: 385.02547pt x 240.63658pt.
- [7] [8 <../results/d_tax_forecast_plot.png>]
+ [7 <../results/d_tax_forecast_plot.png>]
 (./Homework2_Bozoklu.aux)
 
 LaTeX Warning: There were multiply-defined labels.
@@ -524,13 +523,13 @@ Package rerunfilecheck Info: File `Homework2_Bozoklu.out' has not changed.
 (rerunfilecheck)             Checksum: 3DC43373EC07B03296A6788CDFF2BB59;210.
  ) 
 Here is how much of TeX's memory you used:
- 11548 strings out of 476025
- 187343 string characters out of 5790017
- 1865388 words of memory out of 5000000
- 31819 multiletter control sequences out of 15000+600000
- 522428 words of font info for 70 fonts, out of 8000000 for 9000
+ 11550 strings out of 476025
+ 187367 string characters out of 5790017
+ 1866388 words of memory out of 5000000
+ 31821 multiletter control sequences out of 15000+600000
+ 522597 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,9n,76p,460b,506s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,9n,76p,460b,504s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
@@ -538,11 +537,12 @@ usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
 local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/lo
-cal/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Homework2_Bozoklu.pdf (8 pages, 3547957 bytes).
+cal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/loc
+al/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on Homework2_Bozoklu.pdf (7 pages, 3551930 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
+ 143 PDF objects out of 1000 (max. 8388607)
  99 compressed objects within 1 object stream
- 25 named destinations out of 1000 (max. 500000)
+ 24 named destinations out of 1000 (max. 500000)
  89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
